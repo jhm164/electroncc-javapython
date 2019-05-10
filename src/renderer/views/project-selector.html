@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select your Project</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/custom-font.css">
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/project-selector.css">
+
+  <!-- Just for the purpose to include HTML files in any other HTML file (Should be in head, w3-include-html) => 12-12-2018 -->
+  <script type="text/javascript" src="../assets/js/include-html.js"></script>
+</head>
+<body onload="resizeWindow(1000, 650)" style="background-color: #21354a; overflow-y: hidden;">
+	<div class="container-fluid">
+		<div class="row grad-bg">
+			<div class="col-md-12" style="display: flex; height: 95px;">
+				<img src="../assets/images/svg/logo1.svg" class="logo">
+				<h3 class="title">Select your Project type to Start</h3>
+			</div>
+		</div>
+
+		<div class="row" style="padding-top: 5.5%;">
+			<div class="col-md-4 col-sm-4 col-xs-4 project-type" id="code-module">
+				<img src="../assets/images/svg/ic_html.svg" class="project-icon">
+				<h4>Computational Model</h4>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4 project-type">
+				<img src="../assets/images/svg/ic_latex.svg" class="project-icon">
+				<h4>Latex Based</h4>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4 project-type">
+				<img src="../assets/images/svg/ic_computational.svg" class="project-icon">
+				<h4>Video Presentation</h4>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 3%; padding-bottom: 5.5%;">
+			<div class="col-md-4 col-sm-4 col-xs-4 project-type">
+				<img src="../assets/images/svg/ic_html.svg" class="project-icon">
+				<h4>HTML Based</h4>
+			</div>
+		
+			<div class="col-md-4 col-sm-4 col-xs-4 project-type">
+				<img src="../assets/images/svg/ic_social.svg" class="project-icon">
+				<h4>Social Based</h4>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4 project-type">
+				<img src="../assets/images/svg/ic_publication.svg" class="project-icon">
+				<h4>Publication Design</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-4 project-type" id="email-project">
+				<img src="../assets/images/svg/ic_email.svg" class="project-icon">
+				<h4>Email Design</h4>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	  console.log("Including HTML files...")
+	  try {
+	    includeHTML();  
+	    console.log("Successfully included HTML files");
+	  } catch(e) {
+	    console.log("Error while including HTML files");
+	  }
+	  // $(document).ready(function () {
+	  // 	window.open($(this).attr('href'),'title', 'width=800, height=700');
+	  // 	return false;
+	  // });
+	  function resizeWindow(w, h) {
+		var width = w; //600;
+		var height = h; //400;
+		window.resizeTo(width, height);
+		window.moveTo(((screen.width - width) / 2), ((screen.height - height) / 2));      
+	  }
+
+	  $('.project-type').click(function () {
+	  	var type_id = $(this).attr('id');
+	  	window.location = type_id + ".html";
+	  });
+	</script>
+</body>
+</html>

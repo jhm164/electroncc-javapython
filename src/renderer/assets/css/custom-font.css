@@ -1,0 +1,49 @@
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../fonts/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../fonts/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../fonts/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../fonts/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../fonts/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../fonts/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../fonts/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+}

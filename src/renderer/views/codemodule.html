@@ -1,0 +1,91 @@
+<html>
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+  <!-- <script src="../assets/js/computational-model/computation.js" ></script> -->
+       <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+       <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+       
+       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+      
+       <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+       <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+     
+     
+       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+       <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+     
+       <link rel="stylesheet" type="text/css" href="../assets/css/custom-font.css">
+     
+       <link rel="stylesheet" href="../assets/css/computational.css" >
+      
+
+    </head>
+    <body class="container-fluid">
+
+            <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                       
+                      </div>
+
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                   
+                                    <li ><a href="#c" id="c">C</a></li>
+                                    <li><a href="#c++">C++</a></li>
+                                    <li><a href="#java">Java</a></li>
+                                    <li><a href="#py">Python</a></li>
+                                    </ul>
+                          </div>
+
+
+
+                    </div>
+                  </nav>
+   
+        <div class="row" id="top">
+                <div class="col-lg-2" >
+                </div>
+                <div class="col-lg-10" >
+                        <input type="button" id="addnew" class="btn btn-primary" value="Add new" />
+                    <input type="button" id="compilecode" class="btn btn-success" value="Compile/Run" />
+                    <input type="button" id="save" class="btn btn-warning" value="Save" />
+                    </div>
+            </div>
+    <div class="row">
+        <div class="col-lg-2 col-sm-2" id="leftside">
+            
+            <ol>
+                <li>
+                    index.c
+                </li>
+                <li>index.c</li>
+            </ol>
+                              
+                      
+        </div>
+        <div class="col-lg-10 col-sm-10">
+      <textarea name="" id="codearea" cols="30" rows="22"  ></textarea>
+    </div>
+
+    </div>
+    <br>
+    <div class="row">
+            <div class="col-lg-2" >
+            </div>
+            <div class="col-lg-10" >
+           <textarea name="" id="resultdisplay" cols="30" rows="6"  ></textarea>
+                </div>
+        </div>
+     </div>
+  
+    <script>
+    require('../assets/js/computational-model/computation.js')
+   
+    </script>
+    
+            
+    </body>
+</html>

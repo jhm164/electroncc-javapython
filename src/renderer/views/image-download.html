@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Generator - index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    -->
+
+    <!--
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.css"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.ui.position.js"></script>
+    -->
+
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/jquery.contextMenu.min.css">
+
+
+  <!-- JavaScript/jQuery-->
+  <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="../assets/js/jquery.contextMenu.min.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.ui.position.js"></script>
+  </head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Wdys</h1>
+  <p>H.L.S.C.V.E.P</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" id="filesList">
+      <h3></h3>
+      <p>This module will allow user to create a dynamic web page.</p>
+      <p>User can drag, drop and resize the elements in a flexible way.</p>
+      <a href="index.html">Go back</a>
+      <hr>
+      
+     <!--  <iframe src="https://sjainventures.com:2096/" style="width: 100%"></iframe> -->
+    </div>
+    <div class="col-sm-4">
+      <h3>LaTeX module</h3>
+      <p>This module will allow user to create LaTeX documents & Pdf.</p>
+      <p>User can use the same features like HTML module to create/design the page, finally click on GET LaTeX button to obtain LaTeX with its compiled Pdf.
+      </p>
+
+    <!--Form-->
+    <form name="form1" onsubmit="return downloadPic(event)">
+        <div class="form-group">
+          <label for="picUrl">Pic Url</label>
+          <input type="text" name="picUrl" id="picUrl" class="form-control entry" required="true" autocomplete="off" placeholder="Type image url">
+        </div>
+
+        <div class="form-group">
+          <label for="fileName">File name</label>
+          <input type="text" name="fileName" id="fileName" class="form-control entry" required="true" autocomplete="off" placeholder="Type file name (no extension)">
+        </div>
+
+        <input type="submit" value="Download" class="btn btn-success">
+    </form>
+    </div>
+    <div class="col-sm-4" id="imgDiv">
+      <h3>Code module</h3>        
+      <p>Code module is for writing programming codes of Python/R/MATLAB/Julia etc.</p>
+      <p>User can either copy and paste the code or manually enter it</p>
+      <img src="../assets/images/downloads/blog.jpeg" style="width: 100%;">
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="../assets/js/image-download-client.js"></script>
+<script type="text/javascript" src="../assets/js/application-menu.js"></script>
+<script type="text/javascript" src="../assets/js/context-menu.js"></script>
+<script type="text/javascript" src="../assets/js/key-combinations.js"></script>
+
+<!--Node-->
+<script type="text/javascript" src="../app/required-packages.js"></script> <!-- Add all required packages here -->
+<script type="text/javascript" src="../app/image-download.js"></script>
+
+<script type="text/javascript" src="../app/get-username.js"></script> 
+<script type="text/javascript" src="../app/get-images-list.js"></script>
+
+</body>
+</html>

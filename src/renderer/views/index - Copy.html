@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GenW dev</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+
+  <!-- Just for the purpose to include HTML files in any other HTML file (Should be in head, w3-include-html) => 12-12-2018 -->
+  <script type="text/javascript" src="../assets/js/include-html.js"></script>
+
+  <style>
+    #h1-title {
+      color: green;
+        font-family: sans-serif;
+        font-weight: normal;
+    }
+
+    .btn-direct {
+      width: 100%;
+    }
+    
+    p {
+        color: black;
+        font-weight: bold;
+        font-family: tahoma;
+    }
+    
+    .jumbotron {
+      background-color: #d8f3e5;
+    }
+    
+    body {
+      background-color: #b1e7cb;
+    }
+    
+    #p2 {
+      color: #000066;
+    }
+
+    #desc {
+      color: gray;
+      font-family: serif;
+    }
+
+    .scroll-icons {
+        /*overflow-x: scroll;*/
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .scroll-icons img {
+      width: 5%;
+      margin-bottom: 10px;
+    }
+
+    /* Customizing scroll bar*/
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 1px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: darkgray; 
+      -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: gray; 
+    }
+
+    /* => Hide vertical scroll bar */
+    body {
+      /*overflow-y: hidden;*/
+    }
+
+    #scroll-icons-group2 {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 id="h1-title">
+        <i class="fa fa-spinner fa-spin"></i>
+          LxYs, DwYw, Dpm Draw
+        </h1>      
+    <p> <i class="fa fa-bar-chart"></i> A project to work with different kind of thing including the work related to design of HTML pages using visual builder to getting it as HTML file and PDF both.</p>
+    <br>
+    <p id="p2"><i class="fa fa-spinner fa-spin"></i> You can find brief description of each of these modules below one by one.</p>
+
+    <!-- Icons Group 1 -->
+    <div id="scroll-icons-group1" class="scroll-icons">
+        <div w3-include-html="scroll-icons-group1.html" style="margin: 0; padding: 0; display: inline;"></div>
+    </div>
+
+
+    <!-- Icons Group 2 -->
+    <div id="scroll-icons-group2" class="scroll-icons">
+        <div w3-include-html="scroll-icons-group2.html" style="margin: 0; padding: 0; display: inline;"></div>
+    </div>
+
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-8">
+        <div class="list-group">
+          <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">
+              <i class="fa fa-codepen"></i>
+              HTML module
+            </h4>
+            <p class="list-group-item-text">
+              <i class="fa-li fa fa-check-square"></i>
+              This module includes many sub modules including Table, Figure, Text, Equation etc. </p>
+          </a>
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">
+              <i class="fa fa-connectdevelop"></i>
+              LaTeX module
+            </h4>
+            <p class="list-group-item-text">This module is to work with producing LaTeX documents and compiling them into a PDF.</p>
+          </a>
+          <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">
+              <i class="fa fa-forumbee"></i>
+              Computational code module
+            </h4>
+            <p class="list-group-item-text">The main task of this module is to contain code related to R/Python/MATLAB/Julia/Octave etc.</p>
+          </a>
+          
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">
+              <i class="fa fa-leanpub"></i>
+              Email manager module
+            </h4>
+            <p class="list-group-item-text">This is module is used to create email tasks, it includes almost all basic features of a simple email sending task.</p>
+          </a>
+          
+          <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">
+              <i class="fa fa-mixcloud"></i>
+              Social media module
+            </h4>
+            <p class="list-group-item-text">This module allows user to publish/post the created contents like PDFs (to Facebook, Linkedin etc.), videos (to YouTube)</p>
+          </a>
+          
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">
+                <i class="fa fa-rebel"></i>
+                Publication module
+            </h4>
+            <p class="list-group-item-text">This module allows user to create publications etc. where user can design and create publications</p>
+          </a>
+          
+          <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">
+              <i class="fa fa-youtube-play"></i>
+              Video presentation module
+            </h4>
+            <p class="list-group-item-text">This module allows to create video created by merging and combining different kind of media like PPT, Beamer, mp3, text, mp4 etc.</p>
+          </a>
+        </div>  <!--List group closed-->
+    </div>
+  
+    <div class="col-md-4"> <!-- Column 3rd started -->
+      <h1 id="desc"><i class="fa fa-file-text-o"></i> Elements Description</h1>
+      <!-- Images download -->
+      <hr>
+      <a class="btn btn-primary btn-lg btn-direct" href="image-download.html">
+        <i class="fa fa-file-photo-o"></i>  
+
+        Img by Url
+      </a>
+      <hr>
+
+      <!-- Table module -->
+      <a class="btn btn-success btn-lg btn-direct" href="table.html">
+        <i class="fa fa-table"></i>
+        Dynamic 2D DS
+      </a>
+      <hr>
+      <a class="btn btn-info btn-lg btn-direct" href="vdir.html">
+        <i class="fa fa-bar-chart"></i>
+        Dir ls
+      </a>
+      <hr>
+
+      <a class="btn btn-primary btn-lg btn-direct" href="trpr.html">
+        <i class="fa fa-file-photo-o"></i>  
+
+        Tr Pr
+      </a>
+
+      <hr>
+      <a class="btn btn-success btn-lg btn-direct" href="open-file.html">
+        <i class="fa fa-check"></i>
+        Open file
+      </a>
+      <hr>
+
+      <a class="btn btn-primary btn-lg btn-direct" href="open-file-v2.html">
+        <i class="fa fa-cloud"></i>
+        Open file (Version 2)
+      </a>
+      <hr>
+
+      <a class="btn btn-primary btn-lg btn-direct" href="em.html">
+        <i class="fa fa-check-square-o"></i>
+        Email manager
+      </a>
+      <hr>
+
+    </div> <!-- Column 3rd closed --> 
+  </div> <!-- Row1 closed -->
+</div> <!-- Container closed -->
+
+
+<script type="text/javascript">
+  console.log("Including HTML files...")
+
+  try {
+    includeHTML();  
+    console.log("Successfully included HTML files");
+  } catch(e) {
+    console.log("Error while including HTML files");
+  }
+</script>
+</body>
+</html>

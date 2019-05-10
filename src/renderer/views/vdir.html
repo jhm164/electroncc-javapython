@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dir Viewer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="../app/get-directory-tree-min.js"></script>
+  <script type="text/javascript" src="../assets/js/prism2.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assets/css/prism2.css">
+  <style type="text/css">
+    #btn {
+      width: 100%;
+    }
+
+    input[type='text'] {
+      padding: 10px;
+      height: 40px;
+      font-family: sans-serif;
+      font-size: 20px;
+      border: 1px solid green;
+    }
+    input[type="text"]:focus {
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container"> <!--Container-->
+  <div class="row"> <!--Row-->
+    <div class="col-md-6 col-md-offset-3 col-xs-12 text-center"> <!--Column 1-->
+      <h2>Dir listing</h2>
+      <a href="index.html">Go back</a>
+      <hr>
+
+        <form onsubmit="getDirectoryTree(event)" name="dir-listing-form">
+          <div class="form-group">
+            <label for="Absolute path"></label>
+            <input type="text" class="form-control" id="abspath" placeholder="Absolute path of any directory" name="abspath">
+          </div>
+          <!--  
+          <div class="form-group">
+            <label for="pwd"></label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+          </div> -->
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Hidden files</label>
+          </div>
+          <button type="submit" class="btn btn-success" id="btn">Dir</button>
+        </form>
+    </div> <!--Column 1-->
+  </div> <!--Row-->
+
+
+  <div class="row">
+    <br>
+    <br>
+    <hr>
+    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+<!--        
+          <pre id="dirs">
+        
+          </pre> --> 
+     
+
+      <pre>
+        <!--language-css, langauage-js, language-c, language-html-->
+        <code class="language-js" id="dirs"> 
+        </code>
+      </pre>
+
+    </div>
+  </div>
+</div> <!--Container-->
+
+
+<script type="text/javascript" src="../assets/js/microlight.js"></script>
+
+<script type="text/javascript">
+function getHtmlCode(contents) {
+    alert("I'm there...");
+
+    // let files = contents.files;
+    // for(let key in files) {
+    //   console.log(">>>==>>" + key)
+    // }
+
+    // let dirs = contents.dirs;
+    // for(let key in dirs) {
+    //   console.log(">>>==>" + key);
+    // }
+    console.log(">>==>>" + contents.name);
+    console.log(">>==>>" + contents.icons);
+}
+</script>
+
+<script type="text/javascript">
+function getDirectoryTree(event){
+  /**
+
+    H:\RishikeshAgrawani\Projects\GenWork\Docs>tree . /f
+    Folder PATH listing for volume New Volume
+    Volume serial number is C867-828E
+    H:\RISHIKESHAGRAWANI\PROJECTS\GENWORK\DOCS
+    │   DIVI-BUILDER.md
+    │   libraries.md
+    │   NW-or-Electron-or-Any.md
+    │   TAMIM-SIR-MESSAGES.md
+    │
+    ├───Installers
+    └───Planning-for-generator-modules
+        │   computational_code.md
+        │   table.md
+        │
+        └───Discussions
+                Timeline.md
+  */
+
+  event.preventDefault();
+  console.log("Dir browsing...");
+
+  // const abspath = document.forms["dir-listing-form"]["abspath"];
+
+
+  // const fileOrDirPath = "H:\\RishikeshAgrawani\\Projects\\GenWork\\Docs";
+  const fileOrDirPath = document.forms["dir-listing-form"]["abspath"].value;
+  console.log(fileOrDirPath);
+  alert(fileOrDirPath);
+  const iconPath = "../assets/images/icons/";
+  let options = {
+    iconPath
+  };
+  const directoryTreeObj = getChildren(fileOrDirPath, options);
+
+  if(directoryTreeObj !== null) { // directoryTreeObj is a valid directory path
+    rootFullPath = path.dirname(fileOrDirPath) + path.sep + path.basename(fileOrDirPath);
+    directoryTreeObj["fullPath"] = rootFullPath;
+    directoryTreeObj["name"] = path.basename(fileOrDirPath);
+
+    /*
+      >
+      > const path = require("path")
+      undefined
+      >
+      > path.dirname(".")
+      '.'
+      >
+      > path.resolve(".")
+      'H:\\RishikeshAgrawani\\Projects\\GenWork\\NW\\genw-dev\\src\\app'
+      >
+      > path.resolve("..")
+      'H:\\RishikeshAgrawani\\Projects\\GenWork\\NW\\genw-dev\\src'
+      >
+    */
+    directoryTreeObj["icon"] = {
+      "close": "../assets/images/icons/dirClosed.svg",
+      "open": "../assets/images/icons/dirOpened.svg"
+    };
+
+    let dirs = JSON.stringify(directoryTreeObj, null, 4);
+    console.log(dirs);
+    document.getElementById("dirs").innerText = dirs;
+
+    // Rerun Prism syntax highlighting on the current page
+    // https://schier.co/blog/2013/01/07/how-to-re-run-prismjs-on-ajax-content.html
+    Prism.highlightAll();
+
+    const htmlCode = getHtmlCode(directoryTreeObj);
+    // f_load();
+  }
+}
+
+// getDirectoryTree()
+
+</script>
+</body>
+</html>

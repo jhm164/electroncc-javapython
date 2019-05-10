@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <!-- OR -->
+  <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+  <!-- OR NONE IF YOU ARE USING PURE JAVASCRIPT -->
+</head>
+<body>
+<input style="display:none;" id="fileDialog" type="file" />
+
+<h1 id='h1'>Nothig is selected</h1>
+<h2 style="display: none;" id='h2'>Content:</h2>
+<textarea id='content' style="width: 100%;" rows='200'>
+	
+</textarea>
+<script>
+	function chooseFile(name) {
+		const fs = require("fs");
+		var chooser = document.querySelector(name);
+
+		chooser.addEventListener("change", function(evt) {
+	  		console.log(this.value);
+
+	  		document.getElementById('h1').innerHTML = 'Selected file <span style="color:green">' + this.value + "</span>";
+
+	  		const content = fs.readFileSync(this.value, {encoding: 'UTF-8'});
+	  		document.getElementById('h2').style.display = 'block';
+	  		document.getElementById('content').value = content;
+
+		}, false);
+
+		chooser.click();  
+	}
+
+	chooseFile('#fileDialog');
+</script>
+</body>
+</html>

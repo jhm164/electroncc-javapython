@@ -1,0 +1,65 @@
+.grad-bg {
+	background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+}
+
+.logo {
+	margin-top: 50px;
+	width: 100px;
+	height: 100px;
+}
+
+.app_name {
+	color: #fff;
+	margin-top: 20px;
+	font-size: 60px;
+	letter-spacing: -2px;
+}
+
+.version {
+	color: #b3b3b3;
+    font-family: sans-serif;
+	letter-spacing: -1px;
+    margin-bottom: 50px;	
+}
+
+.link_list {
+	list-style: none;
+	position: relative;
+    margin-left: 20%;
+}
+
+.link_btn {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #b3b3b3;
+    outline: 0;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.link_btn:hover, .link_btn:focus {
+	color: #9db0c7;
+    text-decoration: none;
+}
+
+.link_icon {
+	padding-right: 15px;
+    position: relative;
+    bottom: 2px
+}
+
+.one {
+    width: 40px;
+    padding-right: 10px;
+}
+
+.two {
+	width: 40px;
+	left: 2px;
+}
+
+.three {
+	left: 2px;
+	width: 40px;
+}

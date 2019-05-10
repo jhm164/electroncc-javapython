@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/tab-design.css">
+  
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- <script type="text/javascript" src="../assets/js/jquery.min.js"></script> -->
+
+	<script src="../assets/js/jquery-3.3.1.js"></script>
+
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/custom-font.css">
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/email-project.css">
+
+  <!-- Just for the purpose to include HTML files in any other HTML file (Should be in head, w3-include-html) => 12-12-2018 -->
+  <script type="text/javascript" src="../assets/js/include-html.js"></script>
+<link rel="stylesheet" href="../assets/css/jquery-ui.css">
+  <script src="../assets/js/jquery-ui.js"></script>
+  <style type="text/css">
+  	.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="dropdown _child">
+	      <a class="dropdown-toggle" data-toggle="dropdown" href="#">File</a>
+	        <ul class="dropdown-menu">
+		      <li class="dropdown-submenu">
+		        <a class="test" tabindex="-1" href="#">New <span class="caret"></span></a>
+		        <ul class="dropdown-menu">
+		          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+		          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+		          <li class="dropdown-submenu">
+		            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+		            <ul class="dropdown-menu">
+		              <li><a href="#">3rd level dropdown</a></li>
+		              <li><a href="#">3rd level dropdown</a></li>
+		            </ul>
+		          </li>
+		        </ul>
+		      </li>
+		      <li><a tabindex="-1" href="#">Save</a></li>
+		      <li><a tabindex="-1" href="#">Save As</a></li>
+		      <li><a tabindex="-1" href="#">Properties</a></li>
+		    </ul>
+	    </li>
+      <li class="dropdown _child">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Navigate</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Send <span style="float: right;">Ctrl+Alt+Enter</span></a></li>
+          <li><a href="#">Reset <span style="float: right;">Ctrl+Alt+Esc</span></a></li>
+          <li><a href="#">Delete <span style="float: right;">Ctrl+Delete</span></a></li>
+        </ul>
+      </li>
+      <li class="dropdown _child">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attach</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Image</a></li>
+          <li><a href="#">Document</a></li>
+          <li><a href="#">Audio</a></li>
+        </ul>
+      </li>
+      <li class="_child"><a href="#">Settings</a></li>
+      <li class="_child"><a href="#">Help</a></li>
+      <li class="_child"><a href="#">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+	<div class="row">
+		<div id="mail_list_div">
+				<table id="mail_list" class="table display table-striped table-bordered table-hover" style="width:100%; margin-bottom: 0;">
+					<thead>
+						<th>bhdfgbhf</th>
+						<th>bhdfgbhf</th>
+						<th>bhdfgbhf</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="checkTD"></td>							
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/04/25</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/07/25</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2009/01/12</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2012/03/29</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">London Yogesh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2008/11/28</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2012/12/02</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2012/08/06</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">London Yogesh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2010/10/14</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2009/09/15</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">London Yogesh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2008/12/13</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2008/12/19</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2013/03/03</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2008/10/16</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">London Yogesh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2012/12/18</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2010/03/17</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">London Yogesh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2012/11/27</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2010/06/09</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">London Yogesh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2009/04/10</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2012/10/13</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">London Yogesh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2012/09/26</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/09/03</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2009/06/25</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/12/12</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">London Yogesh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2010/09/20</div></td>
+						</tr>
+						<tr>
+							<td class="message"><input type="checkbox" value=""></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2009/10/09</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2010/12/22</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">London Yogesh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2010/11/14</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/06/07</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">London Yogesh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2012/04/09</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2010/01/04</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2012/06/01</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2013/02/01</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/12/06</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/03/21</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2009/02/27</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2010/07/14</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2008/11/13</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/06/27</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/01/25</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2008/11/13</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/06/27</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/01/25</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2008/11/13</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/06/27</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/01/25</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2008/11/13</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/06/27</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/01/25</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2008/11/13</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/06/27</div></td>
+						</tr>
+						<tr>
+							<td class="checkTD"></td>
+							<td>
+								<div class="mail_list_content">
+									<span class="mail_list_subject">Edinburgh</span>
+									<span class="mail_list_separator">&nbsp;-&nbsp;</span>
+									<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+								</div>
+							</td>
+							<td class="mail_date"><div class="dated_mail"><i class="fa fa-paperclip attach"></i>2011/01/25</div></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<th>ghfdhdfg</th>
+						<th>ghfdhdfg</th>
+						<th>ghfdhdfg</th>
+					</tfoot>
+				</table>
+		  </table>			
+		</div>
+		<div id="mail_form_div">
+			<div class="row" style="margin: 0;">				
+				<div class="tab-container">
+				  <ul class="nav nav-tabs" id="myTab">
+				    <li class="active"><a data-target="#home" data-toggle="tab">Home <button class="close closeTab" type="button" >×</button></a></li>
+				    <li><a data-target="#profile" data-toggle="tab">Profile <button class="close closeTab" type="button" >×</button></a></li>
+				    <li><a data-target="#messages" data-toggle="tab">Messages <button class="close closeTab" type="button" >×</button></a></li>
+				    <li><a data-target="#settings" data-toggle="tab">Settings <button class="close closeTab" type="button" >×</button></a></li>
+				    <!-- <button class="btn btn-default"></button> -->
+				  </ul>
+
+				  <div class="tab-content">
+				    <div class="tab-pane active" id="home">
+				    	<form onsubmit="sendMail(event)" name="email-form">
+						  <div class="form-group">
+						    <input type="email" placeholder="From" id="from" class="form-control">
+						  </div>
+
+						  <div class="form-group" id="to-selector">
+							  <div class="input-group" id="ndfnvsfd">
+							    <input type="email" placeholder="To" id="to" class="form-control">
+							    <span id="cc-span" class="input-group-addon"><a id="cc-RequiredCheck" field-handler="field-activator" href="javascript:void(0)">Cc</a></span>
+							    <span id="bcc-span" class="input-group-addon"><a id="bcc-RequiredCheck" field-handler="field-activator" href="javascript:void(0)">Bcc</a></span>
+							  </div>	
+						  </div>
+
+						  <div class="form-group">
+						    <input type="text" placeholder="Subject" id="subject" class="form-control">
+						  </div>
+
+						  <div id="cc-selector" class="form-group" style="display: none;">
+							  <div class="input-group" id="fdgsfg">							    
+							    <input id="cc-InputBox" type="email" placeholder="Cc" class="form-control">
+							    <span id="bcc-span1" class="input-group-addon"><a id="bcc-RequiredCheck1" field-handler="field-activator" href="javascript:void(0)">Bcc</a></span>
+							  </div>	
+						  </div>
+
+						  <div id="bcc-selector" class="form-group" style="display: none;">
+							  <div class="input-group">							    
+							    <input type="email" id="bcc-InputBox" placeholder="Bcc" class="form-control">
+							    <span id="cc-span1" class="input-group-addon"><a id="cc-RequiredCheck1" field-handler="field-activator" href="javascript:void(0)">Cc</a></span>
+							  </div>
+						  </div>
+
+						  <div class="form-group">
+						  	<textarea id="editor" name="editor" placeholder="Type a message..."></textarea>
+						  </div>
+
+						  <div class="form-group" style="display: -webkit-box;">
+						    <input type="file" class="custom-file-input" id="files" name="files" style="width: 50px;" multiple>
+						    <select class="form-control" style="position: relative; bottom: 3px;width: auto; min-width: 50%;">
+							    <option>Select any template...</option>
+							    <option>2</option>
+							    <option>3</option>
+							    <option>4</option>
+							  </select>
+						  </div>
+
+						  <div class="form-group" id="file-preview" style="overflow-y: scroll; max-height: 240px; padding-right: 7px;"></div>
+
+						  <div class="form-group" style="margin-top: 15px;">
+						    <input class="btn btn-info" type="submit" value="Send">
+						  </div>
+						</form>
+				    </div>
+				    <div class="tab-pane" id="profile">Profile</div>
+				    <div class="tab-pane" id="messages">Message</div>
+				    <div class="tab-pane" id="settings">Settings</div>
+				  </div>
+				</div>
+			</div>		
+		</div>
+	</div>
+</div>
+
+	<script src="../assets/js/jquery.dataTables.min.js"></script>
+	<script src="../assets/js/dataTables.select.min.js"></script>
+	<script src="../assets/js/dataTables.bootstrap.min.js"></script>
+	<script src="../assets/js/ckeditor-full/ckeditor.js"></script>
+	<script src="../assets/js/email-project.js"></script>
+	<script src="../assets/js/tabOperations.js"></script>
+
+	<script type="text/javascript">
+/*	  console.log("Including HTML files...")
+	  try {
+	    includeHTML();  
+	    console.log("Successfully included HTML files");
+	  } catch(e) {
+	    console.log("Error while including HTML files");
+	  }*/
+	</script>
+</body>
+</html>

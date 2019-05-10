@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dir Viewer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="../assets/js/prism2.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assets/css/prism2.css">
+  <style type="text/css">
+    #btn {
+      width: 100%;
+    }
+
+    input[type='text'] {
+      padding: 10px;
+      height: 40px;
+      font-family: sans-serif;
+      font-size: 20px;
+      border: 1px solid green;
+    }
+    input[type="text"]:focus {
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+<body>
+<input style="display:none;" id="fileDialog" type="file" />
+
+<div class="container-fluid"> <!--Container-->
+  <div class="row"> <!--Row-->
+    <div class="col-md-9 col-md-offset-3 text-center"> <!--Column 1-->
+      <div class="col-md-6">
+        <h2>Select file to view its contents</h2>
+        <a href="index.html">Go back</a>
+        <hr>
+        <button type="submit" class="btn btn-success" id="btn" onclick="chooseFile('#fileDialog')">Choose file</button>
+      </div> <!-- <LEFT COL -->
+
+      <div class="col-md-6">
+        <hr>
+         <h4>Select color to change the background color of text contents</h4><br>
+
+
+Fg color &raquo; <input type="color" name="color2" id="color2" value='#00ff00' onchange="changeBgColor(this.id, 'fgColor')">
+
+<hr>
+Bg color &raquo; <input type="color" name="color1" id="color1" value='#000000' onchange="changeBgColor(this.id, 'bgColor')">
+
+        
+
+        <hr>
+      </div> <!-- RIGHT COL -->
+    </div> <!--Column 1-->
+  </div> <!--Row-->
+
+
+  <div class="row">
+    <br>
+    <br>
+    <hr>
+    <div class="col-md-9 col-md-offset-3">
+      <p id='p'>Nothing has been selected</p>
+      <textarea id='content' style="width: 100%; background-color: " rows='200'></textarea>
+      
+
+    </div>
+  </div>
+</div> <!--Container-->
+<!-- <script type="text/javascript" src="../assets/js/microlight.js"></script> -->
+
+<script type="text/javascript">
+  function chooseFile(name) {
+    const fs = require("fs");
+    var chooser = document.querySelector(name);
+
+    chooser.addEventListener("change", function(evt) {
+        console.log(this.value);
+
+        document.getElementById('p').innerHTML = '<span style="color: maroon">Selected file: </span> <span style="color:green">' + this.value + "</span>";
+
+        const content = fs.readFileSync(this.value, {encoding: 'UTF-8'});
+        // document.getElementById('h2').style.display = 'block';
+        document.getElementById('p').style.display = 'block';
+        document.getElementById('content').value = content;
+
+    }, false);
+
+    chooser.click();
+  }
+
+  // chooseFile('#fileDialog');
+</script>
+
+
+<script type="text/javascript">
+  function changeBgColor(colorId, changeType) {
+    alert('ok');
+
+    console.log(colorId, changeType);
+
+    const col = document.getElementById(colorId);
+    const defaultVal = col.defaultValue;
+    const newVal = col.value;
+
+    if(changeType === 'bgColor') {
+      alert('fine')
+      $("#content").css("background-color", newVal);
+    } else {
+      alert('wine')
+      $("#content").css("color", newVal);
+    }
+
+    console.log("Successfully changed the color");
+  }
+</script>
+</body>
+</html>

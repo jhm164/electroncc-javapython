@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Table resizable</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        #div1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 0px;
+            border: 1px solid green;
+        }
+
+
+        #div2 {
+            width: 100%;
+            height: 900px;
+            border: 1px solid blue;
+        }
+
+        table, th, td {
+            border: 1px solid lightblue;
+            border-collapse: collapse;
+        }
+
+        td {
+            height: 20px;
+
+            /* cells resizable */
+            overflow: auto;
+            resize: both;
+        }
+
+        body {
+          background-color: #202021;
+        }
+        #div2 {
+          background-color: #161616;
+        }
+
+        h2, p {
+          color: white;
+          font-family: sans-serif;
+          /*text-align: center;*/
+        }
+
+        /*#div1 {
+          text-align: center;
+        }*/
+    </style>
+    <script type="text/javascript" src="../assets/js/table.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>&raquo; Table, Gen, Drg, Drp, {r, c}, prompt &laquo; </h2>
+                <p>+ Drag the image back and forth between the two div elements</p>
+                <a href="index.html">Go back</a>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                  <img src="http://www.gis.ms.gov/Portal/img/icon_table.png" draggable="true" ondragstart="drag(event)" id="drag1" width="100%" height="100%">
+                </div>           
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dir Selector</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="../app/get-directory-tree-min.js"></script>
+  <script type="text/javascript" src="../assets/js/prism2.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assets/css/prism2.css">
+  <style type="text/css">
+    #btn {
+      width: 100%;
+    }
+
+    input[type='text'] {
+      padding: 10px;
+      height: 40px;
+      font-family: sans-serif;
+      font-size: 20px;
+      border: 1px solid green;
+    }
+    input[type="text"]:focus {
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container"> <!--Container-->
+  <div class="row"> <!--Row-->
+    <div class="col-md-6 col-md-offset-3 col-xs-12 text-center"> <!--Column 1-->
+      <h2>Dir listing</h2>
+      <a href="index.html">Go back</a>
+      <hr>
+
+        <form onsubmit="getDirectoryTree(event)" name="dir-listing-form">
+          <div class="form-group">
+            <label for="Absolute path"></label>
+            <input type="text" class="form-control" id="abspath" placeholder="Absolute path of any directory" name="abspath">
+          </div>
+           
+          <div class="form-group">
+            <label for="file">Choose dir</label>
+            <input type="file" name="file" class="form-control" id="file" placeholder="Choose dir" nwdirectory />
+          </div>
+          
+          <button type="submit" class="btn btn-success" id="btn">Process</button>
+        </form>
+    </div> <!--Column 1-->
+  </div> <!--Row-->
+</div> <!--Container-->
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

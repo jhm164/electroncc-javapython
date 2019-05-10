@@ -1,0 +1,13 @@
+.form-control {
+	border: 1px solid black;
+}
+
+.form-control:hover {
+	border: 1px solid blue;
+}
+
+p {
+	/*color: green;*/
+	/*font-weight: bold;*/
+	font-family: 'lucida console';
+}

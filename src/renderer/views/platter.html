@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PyPsi</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/custom-font.css">
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/platter.css">
+
+  <!-- Just for the purpose to include HTML files in any other HTML file (Should be in head, w3-include-html) => 12-12-2018 -->
+  <script type="text/javascript" src="../assets/js/include-html.js"></script>
+</head>
+<body onload="resizeWindow(800, 520)" class="grad-bg">
+
+<!-- <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="#">File</a></li>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Edit</a></li>
+      <li><a href="#">View</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Toggle</a></li>
+      <li><a href="#">Delete</a></li>
+      <li><a href="#">Manage</a></li>
+      <li><a href="#">Crop</a></li>
+      <li><a href="#">Tools</a></li>
+      <li><a href="#">Terminate</a></li>
+      <li><a href="#">Recycle</a></li>
+    </ul>
+  </div>
+</nav> -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<center>
+					<img src="../assets/images/svg/logo1.svg" class="logo">
+					<h1 class="app_name">Generator</h1>
+					<h3 class="version">Version 1.0.0</h3>
+				</center>
+				<div class="col-md-6">
+					<ul class="link_list">
+						<li><a href="project-selector.html" class="link_btn"><img class="link_icon one" src="../assets/images/svg/start.svg">Start a new Generator project</a></li>
+						<li><a href="" class="link_btn"><img class="link_icon two" src="../assets/images/svg/existing.svg">Open an existing Generator project for better ease</a></li>
+						<li><a href="" class="link_btn"><img class="link_icon three" src="../assets/images/svg/help.svg">Get online support</a></li>
+					</ul>						
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	  console.log("Including HTML files...")
+	  try {
+	    includeHTML();  
+	    console.log("Successfully included HTML files");
+	  } catch(e) {
+	    console.log("Error while including HTML files");
+	  }
+	  // $(document).ready(function () {
+	  // 	window.open($(this).attr('href'),'title', 'width=800, height=700');
+	  // 	return false;
+	  // });
+	  function resizeWindow(w, h) {
+		var width = w; //600;
+		var height = h; //400;
+		window.resizeTo(width, height);
+		window.moveTo(((screen.width - width) / 2), ((screen.height - height) / 2));      
+	  }
+	</script>
+</body>
+</html>

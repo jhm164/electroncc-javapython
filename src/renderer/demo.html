@@ -1,0 +1,58 @@
+<html>
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container">
+<table>
+<thead>
+
+</thead>
+<tbody>
+    <tr>
+        <td>write file name</td>
+        <td><input type="text" id="filename" class="form-element"></td>
+        <td><input type="button" class="btn btn-success" value="create" id="create"></td>
+    </tr>
+    <tr>
+       
+   
+      <td>
+            <select name="files" id="choosefile">
+                    <option id="allfiles" value="--select--">--select--</option>
+                 
+                  </select>
+      </td>
+      <td>
+            <input type="button" value="Load File" id="loadfile">
+      </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <textarea class="form-element" id="codearea" style="width:100%;height:200px;margin: 20px;">
+                Eneter code here
+            </textarea>
+        </td>
+    </tr>
+    <tr>
+            <td colspan="3">
+               <input type="button" class="btn btn-success" id="compilecode" value="compile code"/>
+            </td>
+        </tr>
+        <tr>
+                <td colspan="3">
+                    <div style="padding:3%;background-color: black;color:white;width: 100%;height: 30px;">
+                   <p id="resultdisplay"></p>
+                   </div>
+                </td>
+            </tr>
+</tbody>
+</table>
+
+<script>
+    require('./demo.js');
+    </script>
+</body>
+</html>

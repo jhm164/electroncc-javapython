@@ -1,0 +1,42 @@
+body{
+    background-color:rgb(73, 71, 71);
+}
+
+h1,h2,h3,h4,h5,p{
+    color:white;
+}
+
+nav{
+    padding: 8px;
+   
+
+}
+
+#leftside{
+    background-color: rgb(48, 43, 43);
+    padding: 5px;
+  
+    
+   }
+#top{
+    margin:5px; 
+}
+textarea{
+    width: 100%;
+    background-color: black;
+    color: white;
+     
+}
+
+#resultdisplay{
+    background-color: rgb(32, 21, 21);
+}
+
+li{
+   
+   
+    font-size: 150%;
+    font-weight: bold;
+    color: aqua;
+}
+
